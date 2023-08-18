@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Fix google search bar jump",
+  "version": "0.0.1",
+  "description": "Pressing '/' will always jump to the google search bar",
+  "background": {
+    "service_worker": "/out/js/background.js"
+  },
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "out/html/popup.html",
+    "default_icon": {
+      "16": "images/icon.png"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["/out/js/content.js"]
+    }
+  ]
+}

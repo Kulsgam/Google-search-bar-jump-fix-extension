@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./out/js",
+    "sourceMap": true, // specify `true` for debugging purposes
+    "strict": true,
+    "noImplicitReturns": true,
+    "module": "commonjs",
+    "target": "es6"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "types": ["chrome"]
+}
