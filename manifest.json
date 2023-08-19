@@ -10,7 +10,9 @@
   "action": {
     "default_popup": "out/html/popup.html",
     "default_icon": {
-      "16": "images/icon.png"
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
     }
   },
   "content_security_policy": {
